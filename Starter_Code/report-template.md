@@ -4,11 +4,38 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
+# Purpose of the analysis
+This analysis aims at developing and evaluating a predictive learning model to identify the creditworthiness of borrowers so that lenders can make an informed decision and manage their risk better.
+
+# Financial Information 
+The datset used for the analysis includes the following:
+'Loan_size', 'interest_rate', 'borrower_income', 'debt_to_income', 'num_of_accounts', 'derogatory_marks', 'total_debt' ,'loan_status'
+Our primary focus was on column 'loan_status' where 0 indicates a healthy loan and 1 indicates a high risk loan. 
+
+# Target Variable 
+This analysis primarity targets high risk loans with Key variables as:
+- X variable represents borrower's income, number of accounts, debt to income ratio of the borrower and total amount of debt. 
+- Y variable represents 'loan_status' where 0 indicates a healthy loan and 1 indicates a high risk loan. 
+
+
+# Stages of the machine learning process
+
+The machine learning process was divided into the following stages:
+
+- Data Cleaning, Exploration and preparation- reading, understandinga splitting the data into training and testing sets.
+
+- Model Building- using Logistic Regression model to train the data.
+
+- Model Evaluation - Assessing the perfomamce of the model using confusion matrix and classification reports.  
+
+- Model Interpretation- summarizing the results.
+
+# Methods used (e.g., `LogisticRegression`, or any other algorithms).
+Methods used for the analysis were:
+- Logistic regression algorith to identify the credit worthiness of the borrowers.
+- Resampling technique to gather more information of the dataset, improve accuracy and estimate the uncertainity.
+- Confusion matrix and classification report to evaluate the performance of the model.
+
 
 ## Results
 
